@@ -296,7 +296,7 @@ button {
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 
 .header {
-     background: #0c0f38;
+     background: linear-gradient(to top right, #333aa0 0%, #6d08d8 100%);
      width: 100%;
      padding: 40px 40px 40px 40px;
 }
@@ -310,7 +310,8 @@ button {
 }
 
 .banner_main {
-     background: #0c0f38;
+     /* background: #0c0f38; */
+     background: linear-gradient(to bottom right, #333aa0 0%, #6d08d8 100%);
      background-size: 100% 100%;
      background-repeat: no-repeat;
      padding-bottom: 90px;
@@ -426,7 +427,7 @@ button {
 .Services {
      margin-top: 90px;
      padding: 60px 0;
-     background: #0c0f38;
+     background: linear-gradient(to bottom right, #333aa0 0%, #6d08d8 100%);
      font-family: Poppins;
 }
 
@@ -605,14 +606,14 @@ button {
      background: white;
      border-radius:5px;
      box-shadow:0px 0px 10px black;
-     transition: 0.5s;
+     transition: 0.9s;
 }
 .social-icon:hover{
      font-size: 30px;
      border:2px solid rgb(255, 255, 255);
      padding: 5px;
      margin: 10px;
-     background: linear-gradient(to right, #02475e 0%, #760197 100%);
+     background: linear-gradient(to bottom right, #333aa0 0%, #6d08d8 100%);
      border-radius:5px;
      box-shadow:0px 0px 10px black;
      color:white;
