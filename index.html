@@ -84,8 +84,75 @@
          @media screen and (max-width: 770px){
             .text-animation{
          font-size: 40px;
-      }
+          }
          }
+
+         
+         .back-to-top {
+         position: fixed;
+         background: #0078ff;
+         color: #fff;
+         width: 44px;
+         height: 44px;
+         text-align: center;
+         line-height: 1;
+         font-size: 22px;
+         border-radius: 50%;
+         right: 15px;
+         bottom: 15px;
+         transition: background 0.5s;
+         z-index: 11;
+         }
+
+         .back-to-top i{
+         padding-top: 12px;
+         color: #fff;
+         }
+
+         
+         .whats-app {
+         position: fixed;
+         background: #00ff26;
+         color: #fff;
+         width: 44px;
+         height: 44px;
+         text-align: center;
+         line-height: 1;
+         font-size: 22px;
+         border-radius: 50%;
+         right: 15px;
+         bottom: 70px;
+         transition: background 0.5s;
+         z-index: 9;
+         }
+
+         .whats-app i{
+         padding-top: 12px;
+         color: #fff;
+         }
+
+         .why-choose{
+            width: 90%; 
+            box-shadow: 0px 0px 5px -2px rgb(63, 62, 62);
+            border-radius: 5px;
+            padding: 20px 6px 6px 0px;
+            transition: 0.3s;
+         }
+         .why-choose:hover{
+            cursor: pointer;
+            transition: 0.5s;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px 2px rgb(63, 62, 62);
+            transform: rotate3d(10);
+         }
+         .why-choose p{
+            text-align: justify;
+            margin: 9px;
+         }
+         .why-choose-button{
+            width: 70%;
+         }
+       
    </style>
 
 
@@ -257,36 +324,45 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12"  data-aos="flip-left" data-aos-delay="200" data-aos-duration="1500">
-                  <div id="box_ho" class="why-box">
-                     <i><img src="images/default.png" alt="#" /></i>
-                     <h3>heading 1</h3>
-                     <p>making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center">
+                  <div class="why-choose"  data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+                     <i class="why-choose-img"><img src="images/service4.png" alt="#" /></i>
+                     <h3>HEADING 1</h3>
+                     <p>DataArch ensures that enterprise data conform to best practices in order to meet their business objective backed by enhanced data quality and compliance adherence.</p>
+                     <br>
+                     <a href="#" class="why-choose-button btn btn-info">More</a>
                   </div>
-                  <a class="read_more bg" href="#">Read More</a>
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12"  data-aos="flip-up" data-aos-delay="200" data-aos-duration="1500">
-                  <div class="why-box">
-                     <i><img src="images/default.png" alt="#" /></i>
-                     <h3>heading 2</h3>
-                     <p>making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
+
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center">
+                  <div class="why-choose"  data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+                     <i class="why-choose-img"><img src="images/service4.png" alt="#" /></i>
+                     <h3>HEADING 1</h3>
+                     <p>DataArch ensures that enterprise data conform to best practices in order to meet their business objective backed by enhanced data quality and compliance adherence.</p>
+                     <br>
+                     <a href="#" class="why-choose-button btn btn-info">More</a>
                   </div>
-                  <a class="read_more bg" href="#">Read More</a>
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12"  data-aos="flip-left" data-aos-delay="200" data-aos-duration="1500">
-                  <div class="why-box">
-                     <i><img src="images/default.png" alt="#" /></i>
-                     <h3>heading 3</h3>
-                     <p>making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
+
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center">
+                  <div class="why-choose"  data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+                     <i class="why-choose-img"><img src="images/service4.png" alt="#" /></i>
+                     <h3>HEADING 1</h3>
+                     <p>DataArch ensures that enterprise data conform to best practices in order to meet their business objective backed by enhanced data quality and compliance adherence.</p>
+                     <br>
+                     <a href="#" class="why-choose-button btn btn-info">More</a>
                   </div>
-                  <a class="read_more bg" href="#">Read More</a>
                </div>
+
             </div>
          </div>
       </div>
       <br>  
       <!-- end why -->
    
+
+
+      
       <!-- footer start -->
       <div class="footer-section" id="footer" style="padding: 30px ;">
          <div class="container bg-light" style="border-radius:5px;"  data-aos="fade-down" data-aos-delay="50" data-aos-duration="1500">
@@ -325,6 +401,8 @@
       </div>
       <!-- footer stop -->
 
+      <a href="whatsapp:contact=7776824564@s.whatsapp.com&message="Testing"" class="whats-app" style="padding-top: 12px;"><i class="bi bi-whatsapp"></i></a>
+      <a href="#" class="back-to-top" style="padding-top: 12px;"><i class="bi bi-arrow-up-circle"></i></a>
 
      <!-- scrolling animation    -->
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
