@@ -229,7 +229,7 @@
                     </div></b>
                      <span>work since 2011</span>
                      <p>“Without big data analytics, companies are blind and deaf, wandering out onto the web like deer on a freeway.” </p>
-                     <a href="#">contact us</a>
+                     <a href="#"  data-toggle="modal" data-target="#contact-us">contact us</a>
                   </div>
                </div>
                <div class="col-md-7">
@@ -241,6 +241,40 @@
          </div>
       </section>
       <!-- end banner -->
+
+           
+
+ <!--Student 1 model start -->
+ <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content">
+       <div class="modal-header" style="background-color: #083fd7; height:60px;">
+         <h1 class="modal-title text-light" id="exampleModalLongTitle">Contact Us</h1>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body text-left">
+           <div class="row">
+               <div class="col-sm-12 " style="padding:10px;">  
+                <center> 
+                  <form action="javascript:sentmail()">
+                     <input type="text" name="full_name" id="full_name" placeholder="Enter Your Full Name" class="input-field" required><br>
+                     <input type="email" name="email" id="email" placeholder="Enter Your email-id" class="input-field" required><br>
+                     <input type="number" name="mobile" id="mobile" placeholder="Enter Your Mobile" class="input-field" required><br>
+                     <textarea name="message" id="message" cols="10" rows="2" placeholder="Enter Your Message here...." class="input-field" required></textarea><br>
+                     <input type="submit" value="Sent" class="btn btn-success" style="width: 150px;">
+                  <button  type="button" class="btn btn-danger" data-dismiss="modal" style="width: 150px;">Close</button>
+               </form>
+            </center> 
+               </div>
+           </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<!--Student 1 Modal Stop -->
+ 
 
 
       <!-- start introduction -->
