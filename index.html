@@ -360,20 +360,23 @@
       <br>  
       <!-- end why -->
    
-
-
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/prameshwar4378/30min', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly badge widget end -->
       
       <!-- footer start -->
       <div class="footer-section" id="footer" style="padding: 30px ;">
-         <div class="container bg-light" style="border-radius:5px;"  data-aos="fade-down" data-aos-delay="50" data-aos-duration="1500">
-            <div class="row" >
-               <div class="col-sm-6 footer-contact-details" style="padding:30px ;font-size: 20px;" >
-                  <h2  style="font-size:30px; font-family: 'Concert One', cursive;" class="footer-contact-details">Contact us</h2>
+         <div class="container " style="border-radius:5px;"  data-aos="fade-down" data-aos-delay="50" data-aos-duration="1500">
+            <div class="row text-light" >
+               <div class="col-sm-5 footer-contact-details text-light" style="padding:30px ;font-size: 20px;" >
+                  <h2  style="font-size:30px; font-family: 'Concert One', cursive;" class="footer-contact-details text-warning">Contact us</h2>
                   <i class="bi bi-geo-alt-fill"></i> this is address 
                   <br>
-                  <a href="tel:7776824564"><i class="bi bi-telephone-fill"></i> +91-888888888</a>
+                  <a href="tel:7776824564" class="text-light"><i class="bi bi-telephone-fill"></i> +91-888888888</a>
                   <br>
-                 <a href="mailto:abc@gmail.com"> <i class="bi bi-envelope-fill"></i> abc@gmail.com</a> 
+                 <a href="mailto:abc@gmail.com" class="text-light"> <i class="bi bi-envelope-fill"></i> abc@gmail.com</a> 
 
                  <br>
                  <br>
@@ -384,8 +387,16 @@
                  <a href="" class="social-icon"><i class="bi bi-twitter"></i></a>
 
                </div>
-               <div class="col-sm-6" style="padding:30px ;">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.14199688466!2d73.72288046514507!3d18.524564859425464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1666949673139!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"  data-aos="flip-left" data-aos-delay="300" data-aos-duration="2000"></iframe>
+               <div class="col-sm-7 " style="padding-top: 25px; padding-bottom:10px;">
+                  <div class="form" method="post" name="contact-form" id="contact-form">
+                     <form action="javascript:sentmail()">
+                    <input type="text" name="full_name" id="full_name" placeholder="Enter Your Full Name" class="input-field" required><br>
+                    <input type="email" name="email" id="email" placeholder="Enter Your email-id" class="input-field" required><br>
+                    <input type="number" name="mobile" id="mobile" placeholder="Enter Your Mobile" class="input-field" required><br>
+                    <textarea name="message" id="message" cols="10" rows="2" placeholder="Enter Your Message here...." class="input-field" required></textarea><br>
+                    <input type="submit" value="Sent" class="btn btn-success" style="width: 100px;">
+                  </form>
+                  </div>
                </div>
             </div>
          </div>
@@ -404,11 +415,57 @@
       <a href="whatsapp:contact=7776824564@s.whatsapp.com&message="Testing"" class="whats-app" style="padding-top: 12px;"><i class="bi bi-whatsapp"></i></a>
       <a href="#" class="back-to-top" style="padding-top: 12px;"><i class="bi bi-arrow-up-circle"></i></a>
 
+
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js">
+      </script>
+      <script>
+        function sentmail(){
+          var full_name=document.getElementById('full_name').value;
+          var email=document.getElementById('email').value;
+          var mobile=document.getElementById('mobile').value;
+          var message=document.getElementById('message').value;
+          var body='Name: '+ full_name +'<br/>Email: '+ email +'<br/>Mobile: '+ mobile +'<br/>Message: '+ message;
+      
+          Email.send({
+            // Host : "smtp.elasticemail.com",
+            // Username : "prameshwar4378@gmail.com",
+            // Password : "155A7BBFF08581DEEA06AFF997CF899390C5",
+            SecureToken : "b93652c3-9c9b-4715-aa2d-380a80df133b",
+            To : 'prameshwar4378@gmail.com',
+            From : 'prameshwar4378@gmail.com',
+            Subject : "Contact us Entry",
+            Body : body
+            }).then(
+               sweetalertclick()
+            );
+           
+        }
+      </script>
+
+
+
+
      <!-- scrolling animation    -->
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <script>
       AOS.init();
     </script>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  function sweetalertclick(){
+      swal("Done", "Thank You...!", "success");
+      $('#contact-form input[type="text"]').val('');
+      $('#contact-form #email').val('');
+      $('#contact-form #mobile').val('');
+      $('#contact-form textarea').val('');
+  }
+</script>
 
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
@@ -420,7 +477,6 @@
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-
 
    </body>
 </html>
