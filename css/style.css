@@ -628,6 +628,13 @@ button {
      height: 95%;
      text-align: center;
 }
+
+@media screen and (max-width: 750px) {
+     .form{
+          height: 260px;
+     }
+   }
+
 .input-field{
      width: 90%;
      margin-top: 10px;
