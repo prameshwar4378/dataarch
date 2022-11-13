@@ -159,12 +159,13 @@
 
 
 
-   <body class="main-layout">
+   <body class="main-layout" >
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#" /></div>
       </div>
       <!-- end loader -->
+
       <!-- header -->
       <header>
          <!-- header inner -->
@@ -226,13 +227,13 @@
                      });
                      </script>
                     </div></b>
-                     <p style="font-size: 1.3rem;">“Helping data <b style=" font-weight: 900;">cetric</b> business yield greater value.” </p>
-                     <a href="#"  data-toggle="modal" data-target="#contact-us">contact us</a>
+                     <p style="font-size: 1.3rem;">“Helping data <b style=" font-weight: 400;">centric</b> business yield greater value.” </p>
+                     <a href="#"  data-toggle="modal" data-target="#contact-us" style="border-radius:5px ;">contact us</a>
                   </div>
                </div>
                <div class="col-md-7">
                   <div class="text-img">
-                     <figure  data-aos="fade-down" data-aos-delay="200" data-aos-duration="2000"><img src="https://dashtechinc.com/wp-content/uploads/2020/01/Data-Analytics-Hero-Banner.png" /></figure>
+                     <figure  data-aos="fade-down" data-aos-delay="200" data-aos-duration="2000"><img src="images/master01.png" /></figure>
                   </div>
                </div>
             </div>
@@ -245,26 +246,26 @@
       
 
  <!--Student 1 model start -->
- <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-   <div class="modal-dialog modal-dialog-centered" role="document">
-     <div class="modal-content">
-       <div class="modal-header" style="background-color: #333aa0; height:60px;">
+ <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+   <div class="modal-dialog modal-dialog-centered" role="document" >
+     <div class="modal-content" style="border-radius: 30px;">
+       <div class="modal-header" style="background-color: #333aa0; height:60px; border-radius: 5px;">
          <h1 class="modal-title text-light" id="exampleModalLongTitle">Contact Us</h1>
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white; font-size:35px;">
            <span aria-hidden="true">&times;</span>
          </button>
        </div>
-       <div class="modal-body text-left">
+       <div class="modal-body text-left " style="background-color: #333aa0;">
            <div class="row">
                <div class="col-sm-12 " style="padding:10px;">  
                 <center> 
                   <form action="javascript:sentmail()">
                      <input type="text" name="full_name" id="full_name" placeholder="Enter Your Full Name" class="input-field" required><br>
-                     <input type="email" name="email" id="email" placeholder="Enter Your email-id" class="input-field" required><br>
+                     <input type="email" name="email" id="email" placeholder="Enter Your Email" class="input-field" required><br>
                      <input type="number" name="mobile" id="mobile" placeholder="Enter Your Mobile" class="input-field" required><br>
-                     <textarea name="message" id="message" cols="10" rows="2" placeholder="Enter Your Message here...." class="input-field" style="font-size: 22px;" required></textarea><br>
-                     <input type="submit" value="Sent" class="btn btn-success" style="width: 150px;">
-                  <button  type="button" class="btn btn-danger" data-dismiss="modal" style="width: 150px;">Close</button>
+                     <textarea name="message" id="message" cols="10" rows="2" placeholder="Enter Your Message Here...." class="input-field" style="font-size: 22px;" required></textarea><br>
+                     <input type="submit" value="Send" class="btn" style="width: 150px; border: 2px solid gray;">
+                  <button  type="button" class="btn" data-dismiss="modal" style="width: 150px; background-color: gray;">Close</button>
                </form>
             </center> 
                </div>
@@ -290,7 +291,8 @@
              <center> <img src="https://meridian.info/images/top_banner/banner%202.gif" alt="" style="width:80%"   data-aos="fade-down" data-aos-delay="200" data-aos-duration="1500"></center> 
             </div>
             <div class="col-sm-6" style="text-align: justify;">
-               <p class="intro-paragraph"  data-aos="fade-down" data-aos-delay="200" data-aos-duration="1500" style="font-size: 1.3rem;">&nbsp;&nbsp;&nbsp;&nbsp;At DataArch, we help you put advanced technologies at the heart of your business to enable and drive your journey of digitization. Our Cloud transformation offering encompasses everything from strategy via seamless migration to full-fledge managed operations. We take an iterative, test-and-learn approach to transform technology, teams, and processes into modular units that enhance responsiveness and enable a faster, automated enterprise. This approach helps empower organizations to shift resources toward value-generating activities. We focused on making it easy for organizations to work with data. We build data pipelines for all kinds of data streaming or big data, structured or unstructured. We help you transform the way you work. </p>
+               <p class="intro-paragraph"  data-aos="fade-down" data-aos-delay="200" data-aos-duration="1500" style="font-size: 1.3rem;">&nbsp;&nbsp;&nbsp;&nbsp;At DataArch, we help you put advanced technologies at the heart of your business to enable and drive your journey of digitization. Our Cloud transformation offering encompasses everything from strategy via seamless migration to full-fledge managed operations. We take an iterative, test-and-learn approach to transform technology, teams, and processes into modular units that enhance responsiveness and enable a faster, automated enterprise. This approach helps empower organizations to shift resources toward value-generating activities.We are focused on making it easy for organizations to work with data. We build data pipelines for all kinds of data streaming or big data, structured as well as unstructured. We help you transform the way you work. <br>
+                  &nbsp;&nbsp; Using Big Data technologies, DataArch assists firms by setting up a Data Lake which holds structured and unstructured data securely. With our unique automation techniques, the process is accomplished at a faster pace.</p>
             </div>
          </div>
       </div>
@@ -338,7 +340,7 @@
                   <div class="Services-box" style="height: 92%;"  data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
                      <i><img src="images/service4.png" alt="#" /></i>
                      <h3>DATA MANAGEMENT</h3>
-                     <p>DataArch ensures that enterprise data conform to best practices in order to meet their business objective backed by enhanced data quality and compliance adherence.</p>
+                     <p>DataArch ensures that enterprise data confirm to best practices in order to meet their business objective backed by enhanced data quality and compliance adherence.</p>
                   </div>
                </div>
                <!-- <a class="read_more" href="#">Read More</a> -->
@@ -407,32 +409,34 @@
             <div class="row text-light" >
                <div class="col-sm-5 footer-contact-details text-light" style="padding:30px ;font-size: 20px;" >
                   <h2  style="font-size:30px; font-family: 'Concert One', cursive;" class="footer-contact-details text-warning">Contact us</h2>
-                  <i class="bi bi-geo-alt-fill"></i> this is address 
+                  <i class="bi bi-geo-alt-fill"></i> New Sanghavi Pimpri-Chinchwad, Maharashtra 411027
                   <br>
-                  <a href="tel:7776824564" class="text-light"><i class="bi bi-telephone-fill"></i> +91-888888888</a>
+                  <a href="tel:7776824564" class="text-light"><i class="bi bi-telephone-fill"></i> +91-9960743850</a>
                   <br>
-                 <a href="mailto:abc@gmail.com" class="text-light"> <i class="bi bi-envelope-fill"></i> abc@gmail.com</a> 
+                 <a href="mailto:abc@gmail.com" class="text-light"> <i class="bi bi-envelope-fill"></i> sales@dataarch.co</a> 
 
                  <br>
                  <br>
 
-                 <a href="https://www.instagram.com/" class="social-icon" style="color:red ;"><i class="bi bi-instagram"></i></a>
-                 <a href="https://www.youtube.com/" class="social-icon" style="color:red ;"><i class="bi bi-youtube"></i></a>
-                 <a href="https://www.facebook.com/" class="social-icon" style="color:#3b5998 ;"><i class="bi bi-facebook"></i></a>
-                 <a href="https://twitter.com/login" class="social-icon" style="color:	#1DA1F2 ;"><i class="bi bi-twitter"></i></a>
+                 <a href="#" class="social-icon" style="color:red ;"><i class="bi bi-instagram"></i></a>
+                 <a href="#" class="social-icon" style="color:red ;"><i class="bi bi-youtube"></i></a>
+                 <a href="#" class="social-icon" style="color:#3b5998 ;"><i class="bi bi-facebook"></i></a>
+                 <a href="#" class="social-icon" style="color:	#1DA1F2 ;"><i class="bi bi-twitter"></i></a>
 
                </div>
-               <div class="col-sm-7 " style="padding-top: 25px; padding-bottom:10px;">
+
+               <!-- <div class="col-sm-7 " style="padding-top: 25px; padding-bottom:10px;">
                   <div class="form" method="post" name="contact-form" id="contact-form">
                      <form action="javascript:sentmail()">
                     <input type="text" name="full_name" id="full_name" placeholder="Enter Your Full Name" class="input-field" required><br>
-                    <input type="email" name="email" id="email" placeholder="Enter Your email-id" class="input-field" required><br>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" class="input-field" required><br>
                     <input type="number" name="mobile" id="mobile" placeholder="Enter Your Mobile" class="input-field" required><br>
-                    <textarea name="message" id="message" cols="10" rows="2" placeholder="Enter Your Message here...." class="input-field" style="font-size: 22px;" required></textarea><br>
-                    <input type="submit" value="Sent" class="btn btn-success" style="width: 100px;">
+                    <textarea name="message" id="message" cols="10" rows="2" placeholder="Enter Your Message Here...." class="input-field" style="font-size: 22px;" required></textarea><br>
+                    <input type="submit" value="Send" class="btn btn-success" style="width: 100px;">
                   </form>
                   </div>
-               </div>
+               </div> -->
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7563.760204980916!2d73.8126691!3d18.5794434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8cecb206ac1%3A0x1f636eef55f8ac8b!2sNew%20Sanghavi%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411027!5e0!3m2!1sen!2sin!4v1668355664622!5m2!1sen!2sin" width="600" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
          </div>
          <br>
@@ -447,7 +451,7 @@
       </div>
       <!-- footer stop -->
 
-      <a href="whatsapp:contact=7776824564@s.whatsapp.com&message="Testing"" class="whats-app" style="padding-top: 12px;"><i class="bi bi-whatsapp"></i></a>
+      <a href="whatsapp:contact=9960743850@s.whatsapp.com&message="Testing"" class="whats-app" style="padding-top: 12px;"><i class="bi bi-whatsapp"></i></a>
       <a href="#" class="back-to-top" style="padding-top: 12px;"><i class="bi bi-arrow-up-circle"></i></a>
 
 
@@ -470,7 +474,7 @@
             // Username : "prameshwar4378@gmail.com",
             // Password : "155A7BBFF08581DEEA06AFF997CF899390C5",
             SecureToken : "b93652c3-9c9b-4715-aa2d-380a80df133b",
-            To : 'prameshwar4378@gmail.com',
+            To : 'sales@dataarch.co',
             From : 'prameshwar4378@gmail.com',
             Subject : "Contact us Entry",
             Body : body
